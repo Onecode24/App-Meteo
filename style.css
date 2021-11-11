@@ -84,7 +84,6 @@ h2{
     justify-content: center;
     align-items: center;
     height: 50%;
-    position:-webkit-sticky;
 }
 .bloc-jour .temperature{
     display: flex;
@@ -113,7 +112,7 @@ h2{
 .disparition {
     opacity: 0;
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:900px) {
    .container-bloc-heure{
        width: 100%;
        margin-left: 0px;
@@ -126,15 +125,35 @@ h2{
        width: 200px;
    }
    .container-infos {
-       font-size: 1.2em;
+       font-size: 1em;
    }
    .bloc-jour .jour{
-    /*text-overflow:auto;
-    word-wrap: break-word;*/
-    word-break: keep-all;
-    width: 100%;
+    
    }
    h2{
        font-size: 2.2em;
    }
+   .remove{
+    display: none;
+    }
+    .bloc-jour{
+        width: 25%;
+    }
+    .bloc-heure{
+        width: 25%;
+    }
+}
+@media screen and (min-width:500px ) and (max-width:900px) {
+    .class{
+        display: none;
+    }
+    .bloc-heure{
+        width: 20%;
+    }
+    .bloc-jour{
+        width: 20%;
+    }
+    .place{
+        display: block;
+    }
 }
