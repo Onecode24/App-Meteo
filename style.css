@@ -1,0 +1,114 @@
+*,::after, ::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #f1f1f1;
+    background:linear-gradient(65deg,#2065f6,#e0f4f7) ;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 100vh;
+    margin-bottom: 0em;
+}
+h2{
+    font-size: 3em;
+    padding-top: 1em;
+
+}
+.container-infos{
+    font-size: 1.5em;
+}
+.container-logo-infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: top 35px;
+    font-size: 1.5em;
+}
+.container-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 250px;
+}
+.container-infos .temperature{
+    font-size: 1.8em;
+}
+.container-bloc-heure{
+    height: 6.5em;
+    display: flex;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+*.bloc-heure{
+    height: 100%;
+    width: 14.28%;
+    border: solid #f1f1f1 1px;
+    font-size: 1.2em;
+    align-items: center;
+
+}
+.container-bloc-jour{
+    height: 7em;
+    display: flex;
+    width: 60%;
+    margin-left: 20%;
+}
+*.bloc-jour{
+    height: 100%;
+    width: 14.28%;
+    border: solid #f1f1f1 1px;
+    font-size: 1.2em;
+    
+}
+.bloc-heure .heure{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bloc-heure .temperature{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bloc-jour .jour{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+.bloc-jour .temperature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+/*Animation de chargement*/
+
+.overlay-icone-chargement {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(59,50,50), rgb(22,28,29));
+    transition: opacity 1.1s ease-out;
+    z-index: 1000;
+}
+.overlay-icone-chargement img {
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.disparition {
+    opacity: 0;
+}
