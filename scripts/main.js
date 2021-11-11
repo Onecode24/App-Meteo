@@ -59,7 +59,7 @@ fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exc
         
         //Gestion des icone animer
 
-        if(heureActuele>=6 && heureActuele<21){
+        if(heureActuele>=6 && heureActuele<18){
             icone.src=`ressources/jour/${resultAPI.current.weather[0].icon}.svg`
         }else{
             icone.src=`ressources/nuit/${resultAPI.current.weather[0].icon}.svg`
